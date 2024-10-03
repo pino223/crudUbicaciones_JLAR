@@ -36,28 +36,33 @@
                         <label for="ExampleInputPassword1">Lat.: </label>
                         <asp:TextBox ID="txtLat" Text="27.367995492191106" CssClass="form-control" runat="server"></asp:TextBox>
 
-                        <label for="ExampleInputPassword1">Lat.: </label>
+                        <label for="ExampleInputPassword1">Long.: </label>
                         <asp:TextBox ID="txtLong" Text="-109.93271013606712" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
                         <!-- Controles de altas,bajas y cambios -->
                     <div class="form-group">
-                        <asp:Button ID="btnAgregar" CssClass="btn btn-success" runat="server" Text="Agregar" UseSubmitBehavior="false" />
+                        <asp:Button ID="btnAgregar" CssClass="btn btn-success" runat="server" Text="Agregar" UseSubmitBehavior="false" OnClick="AgregarRegistro" />
                         <asp:Button ID="btnModificar" CssClass="btn btn-warning" runat="server" Text="Modificar" UseSubmitBehavior="false" Enabled="false" />
                         <asp:Button ID="btnEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" UseSubmitBehavior="false" Enabled="false"/>
                         <asp:Button ID="btnLimpiar" CssClass="btn btn-default" runat="server" Text="Limpiar" UseSubmitBehavior="false" />
 
 
                     </div>
-                    <asp:Button ID="Button1" runat="server" Text="Button" />
+                    
                 </div>
                 <div class="col-md-8">
                     <br />
                     <h1>Ubicaciones</h1>
-
+                    <asp:GridView ID="gvUbicaciones" runat="server" CssClass="table-responsive table table-bordered">
+                        <Columns>
+                            <asp:ButtonField CommandName="btnSeleccionar" Text="Seleccionar">
+                            <ControlStyle CssClass="btn btn-info" />
+                            </asp:ButtonField>
+                        </Columns>
+                    </asp:GridView>
                 </div>
             </div>
         </div>
-    </form>
     <script>
         $('#ModalMapPreview').locationpicker({
             radius: 0,
@@ -73,5 +78,7 @@
             enableAutocomplete: true
         });
     </script>
-</body>
+        
+    </form>
+    </body>
 </html>

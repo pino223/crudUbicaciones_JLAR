@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crudUbicaciones_JLAR", "crudUbicaciones_JLAR\crudUbicaciones_JLAR.csproj", "{A55EADFF-6C49-4DAE-BCD7-99B4C68936C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{164D9625-4056-457D-95D2-3AE8F7605F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{405FBF88-90C3-4771-9FF8-6A1CAD722360}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A55EADFF-6C49-4DAE-BCD7-99B4C68936C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A55EADFF-6C49-4DAE-BCD7-99B4C68936C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A55EADFF-6C49-4DAE-BCD7-99B4C68936C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164D9625-4056-457D-95D2-3AE8F7605F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164D9625-4056-457D-95D2-3AE8F7605F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164D9625-4056-457D-95D2-3AE8F7605F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164D9625-4056-457D-95D2-3AE8F7605F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405FBF88-90C3-4771-9FF8-6A1CAD722360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405FBF88-90C3-4771-9FF8-6A1CAD722360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405FBF88-90C3-4771-9FF8-6A1CAD722360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405FBF88-90C3-4771-9FF8-6A1CAD722360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
